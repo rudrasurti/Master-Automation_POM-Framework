@@ -1,0 +1,538 @@
+2023-08-05 08:05:46:385 [Appium] Welcome to Appium v1.22.3
+2023-08-05 08:05:46:387 [Appium] Non-default server args:
+2023-08-05 08:05:46:387 [Appium]   port: 16096
+2023-08-05 08:05:46:387 [Appium]   sessionOverride: true
+2023-08-05 08:05:46:388 [Appium]   logFile: C:\Users\Rudra\eclipse-workspace\Zyyah\ServerLogs\server.log
+2023-08-05 08:05:46:413 [Appium] Appium REST http interface listener started on 0.0.0.0:16096
+2023-08-05 08:05:46:881 [HTTP] --> GET /wd/hub/status
+2023-08-05 08:05:46:881 [HTTP] {}
+2023-08-05 08:05:46:883 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2023-08-05 08:05:46:884 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.22.3"}}
+2023-08-05 08:05:46:889 [HTTP] <-- GET /wd/hub/status 200 6 ms - 68
+2023-08-05 08:05:46:889 [HTTP] 
+2023-08-05 08:05:47:765 [HTTP] Request idempotency key: 42ebba8c-26b8-4769-9ac3-3a0d641c2507
+2023-08-05 08:05:47:789 [HTTP] --> POST /wd/hub/session
+2023-08-05 08:05:47:789 [HTTP] {"desiredCapabilities":{"app":"C:\\Users\\Rudra\\eclipse-workspace\\Zyyah/src/test/resources/app/app-debug-pro (1).apk","appActivity":"com.zyyah.proqa.MainActivity","appPackage":"com.zyyah.proqa","newCommandTimeout":300000,"automationName":"UiAutomator2","platformName":"Android","udid":"emulator-5554","deviceName":"Pixel_2_API_30","avd":"Pixel_2_API_30"},"capabilities":{"firstMatch":[{"appium:app":"C:\\Users\\Rudra\\eclipse-workspace\\Zyyah/src/test/resources/app/app-debug-pro (1).apk","appium:appActivity":"com.zyyah.proqa.MainActivity","appium:appPackage":"com.zyyah.proqa","appium:automationName":"UiAutomator2","appium:avd":"Pixel_2_API_30","appium:deviceName":"Pixel_2_API_30","appium:newCommandTimeout":300000,"platformName":"android","appium:udid":"emulator-5554"}]}}
+2023-08-05 08:05:47:790 [W3C] Calling AppiumDriver.createSession() with args: [{"app":"C:\\Users\\Rudra\\eclipse-workspace\\Zyyah/src/test/resources/app/app-debug-pro (1).apk","appActivity":"com.zyyah.proqa.MainActivity","appPackage":"com.zyyah.proqa","newCommandTimeout":300000,"automationName":"UiAutomator2","platformName":"Android","udid":"emulator-5554","deviceName":"Pixel_2_API_30","avd":"Pixel_2_API_30"},null,{"firstMatch":[{"appium:app":"C:\\Users\\Rudra\\eclipse-workspace\\Zyyah/src/test/resources/app/app-debug-pro (1).apk","appium:appActivity":"com.zyyah.proqa.MainActivity","appium:appPackage":"com.zyyah.proqa","appium:automationName":"UiAutomator2","appium:avd":"Pixel_2_API_30","appium:deviceName":"Pixel_2_API_30","appium:newCommandTimeout":300000,"platformName":"android","appium:udid":"emulator-5554"}]}]
+2023-08-05 08:05:47:790 [BaseDriver] Event 'newSessionRequested' logged at 1691222747790 (13:35:47 GMT+0530 (India Standard Time))
+2023-08-05 08:05:48:156 [Appium] Appium v1.22.3 creating new AndroidUiautomator2Driver (v1.70.1) session
+2023-08-05 08:05:48:157 [Appium] There are no active sessions for cleanup
+2023-08-05 08:05:48:159 [BaseDriver] W3C capabilities and MJSONWP desired capabilities were provided
+2023-08-05 08:05:48:159 [BaseDriver] Creating session with W3C capabilities: {
+2023-08-05 08:05:48:159 [BaseDriver]   "alwaysMatch": {
+2023-08-05 08:05:48:159 [BaseDriver]     "platformName": "android",
+2023-08-05 08:05:48:159 [BaseDriver]     "appium:app": "C:\\Users\\Rudra\\eclipse-workspace\\Zyyah/src/test/resources/app/app-debug-pro (1).apk",
+2023-08-05 08:05:48:159 [BaseDriver]     "appium:appActivity": "com.zyyah.proqa.MainActivity",
+2023-08-05 08:05:48:159 [BaseDriver]     "appium:appPackage": "com.zyyah.proqa",
+2023-08-05 08:05:48:159 [BaseDriver]     "appium:automationName": "UiAutomator2",
+2023-08-05 08:05:48:159 [BaseDriver]     "appium:avd": "Pixel_2_API_30",
+2023-08-05 08:05:48:160 [BaseDriver]     "appium:deviceName": "Pixel_2_API_30",
+2023-08-05 08:05:48:160 [BaseDriver]     "appium:newCommandTimeout": 300000,
+2023-08-05 08:05:48:160 [BaseDriver]     "appium:udid": "emulator-5554"
+2023-08-05 08:05:48:160 [BaseDriver]   },
+2023-08-05 08:05:48:160 [BaseDriver]   "firstMatch": [
+2023-08-05 08:05:48:160 [BaseDriver]     {}
+2023-08-05 08:05:48:160 [BaseDriver]   ]
+2023-08-05 08:05:48:160 [BaseDriver] }
+2023-08-05 08:05:48:165 [BaseDriver] Session created with session id: ef1506d8-f91e-4e6f-b18d-3ee9cd4c6379
+2023-08-05 08:05:48:167 [BaseDriver] Using local app 'C:\Users\Rudra\eclipse-workspace\Zyyah/src/test/resources/app/app-debug-pro (1).apk'
+2023-08-05 08:05:48:167 [UiAutomator2] Checking whether app is actually present
+2023-08-05 08:05:48:190 [ADB] Found 6 'build-tools' folders under 'C:\Users\Rudra\AppData\Local\Android\Sdk' (newest first):
+2023-08-05 08:05:48:190 [ADB]     C:/Users/Rudra/AppData/Local/Android/Sdk/build-tools/32.0.0
+2023-08-05 08:05:48:190 [ADB]     C:/Users/Rudra/AppData/Local/Android/Sdk/build-tools/31.0.0
+2023-08-05 08:05:48:190 [ADB]     C:/Users/Rudra/AppData/Local/Android/Sdk/build-tools/30.0.3
+2023-08-05 08:05:48:190 [ADB]     C:/Users/Rudra/AppData/Local/Android/Sdk/build-tools/30.0.2
+2023-08-05 08:05:48:190 [ADB]     C:/Users/Rudra/AppData/Local/Android/Sdk/build-tools/29.0.2
+2023-08-05 08:05:48:190 [ADB]     C:/Users/Rudra/AppData/Local/Android/Sdk/build-tools/28.0.3
+2023-08-05 08:05:48:192 [ADB] Using 'adb.exe' from 'C:\Users\Rudra\AppData\Local\Android\Sdk\platform-tools\adb.exe'
+2023-08-05 08:05:48:192 [ADB] Running 'C:\Users\Rudra\AppData\Local\Android\Sdk\platform-tools\adb.exe -P 5037 start-server'
+2023-08-05 08:05:50:345 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:05:50:346 [ADB] Getting connected emulators
+2023-08-05 08:05:50:346 [ADB] Getting connected devices
+2023-08-05 08:05:50:368 [ADB] No connected devices have been detected
+2023-08-05 08:05:50:370 [ADB] 0 emulators connected
+2023-08-05 08:05:50:370 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:05:50:370 [ADB] Launching Emulator with AVD Pixel_2_API_30, launchTimeout 60000ms and readyTimeout 60000ms
+2023-08-05 08:05:50:373 [ADB] Using 'emulator.exe' from 'C:\Users\Rudra\AppData\Local\Android\Sdk\emulator\emulator.exe'
+2023-08-05 08:05:50:382 [ADB] Running 'C:\Users\Rudra\AppData\Local\Android\Sdk\emulator\emulator.exe' with args: -avd Pixel_2_API_30 -delay-adb
+2023-08-05 08:05:50:404 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:05:50:404 [ADB] Getting connected emulators
+2023-08-05 08:05:50:404 [ADB] Getting connected devices
+2023-08-05 08:05:50:411 [ADB] [AVD OUTPUT] INFO    | Android emulator version 32.1.14.0 (build_id 10330179) (CL:N/A)
+2023-08-05 08:05:50:411 [ADB] [AVD OUTPUT] INFO    | Found systemPath C:\Users\Rudra\AppData\Local\Android\Sdk\system-images\android-30\google_apis_playstore\x86\
+2023-08-05 08:05:50:423 [ADB] No connected devices have been detected
+2023-08-05 08:05:50:426 [ADB] 0 emulators connected
+2023-08-05 08:05:50:426 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:05:50:579 [ADB] [AVD OUTPUT] WARNING | Please update the emulator to one that supports the feature(s): Vulkan
+2023-08-05 08:05:51:427 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:05:51:427 [ADB] Getting connected emulators
+2023-08-05 08:05:51:427 [ADB] Getting connected devices
+2023-08-05 08:05:51:448 [ADB] No connected devices have been detected
+2023-08-05 08:05:51:448 [ADB] 0 emulators connected
+2023-08-05 08:05:51:448 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:05:52:457 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:05:52:457 [ADB] Getting connected emulators
+2023-08-05 08:05:52:458 [ADB] Getting connected devices
+2023-08-05 08:05:52:479 [ADB] No connected devices have been detected
+2023-08-05 08:05:52:479 [ADB] 0 emulators connected
+2023-08-05 08:05:52:479 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:05:52:661 [ADB] [AVD OUTPUT] INFO    | Storing crashdata in: C:\Users\Rudra\AppData\Local\Temp\\AndroidEmulator\emu-crash.db, detection is enabled
+2023-08-05 08:05:52:661 [ADB] [AVD OUTPUT] INFO    | Duplicate loglines will be removed, if you wish to see each indiviudal line launch with the -log-nofilter flag.
+2023-08-05 08:05:52:661 [ADB] [AVD OUTPUT] INFO    | IPv4 server found: 203.187.193.66
+2023-08-05 08:05:52:661 [ADB] [AVD OUTPUT] INFO    | Crash reports will be automatically uploaded to: https://clients2.google.com/cr/report
+2023-08-05 08:05:52:661 [ADB] [AVD OUTPUT] INFO    | added library vulkan-1.dll
+2023-08-05 08:05:52:661 [ADB] [AVD OUTPUT] WHPX on Windows 10.0.22621 detected.
+2023-08-05 08:05:52:661 [ADB] [AVD OUTPUT] Windows Hypervisor Platform accelerator is operational
+2023-08-05 08:05:52:958 [ADB] [AVD OUTPUT] WARNING | *** No gRPC protection active, consider launching with the -grpc-use-jwt flag.***
+2023-08-05 08:05:52:964 [ADB] [AVD OUTPUT] INFO    | Started GRPC server at 127.0.0.1:8554, security: Local, auth: none
+2023-08-05 08:05:53:217 [ADB] [AVD OUTPUT] INFO    | Advertising in: C:\Users\Rudra\AppData\Local\Temp\avd\running\pid_6768.ini
+2023-08-05 08:05:53:494 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:05:53:494 [ADB] Getting connected emulators
+2023-08-05 08:05:53:494 [ADB] Getting connected devices
+2023-08-05 08:05:53:518 [ADB] No connected devices have been detected
+2023-08-05 08:05:53:518 [ADB] 0 emulators connected
+2023-08-05 08:05:53:518 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:05:53:697 [ADB] [AVD OUTPUT] INFO    | Setting display: 0 configuration to: 1080x1920, dpi: 420x420 
+2023-08-05 08:05:54:284 [ADB] [AVD OUTPUT] INFO    | Your emulator is out of date, please update by launching Android Studio:
+2023-08-05 08:05:54:285 [ADB] [AVD OUTPUT]  - Start Android Studio
+2023-08-05 08:05:54:285 [ADB] [AVD OUTPUT]  - Select menu "Tools > Android > SDK Manager"
+2023-08-05 08:05:54:285 [ADB] [AVD OUTPUT]  - Click "SDK Tools" tab
+2023-08-05 08:05:54:285 [ADB] [AVD OUTPUT]  - Check "Android Emulator" checkbox
+2023-08-05 08:05:54:285 [ADB] [AVD OUTPUT]  - Click "OK"
+2023-08-05 08:05:54:533 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:05:54:533 [ADB] Getting connected emulators
+2023-08-05 08:05:54:533 [ADB] Getting connected devices
+2023-08-05 08:05:54:559 [ADB] No connected devices have been detected
+2023-08-05 08:05:54:559 [ADB] 0 emulators connected
+2023-08-05 08:05:54:559 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:05:55:562 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:05:55:563 [ADB] Getting connected emulators
+2023-08-05 08:05:55:563 [ADB] Getting connected devices
+2023-08-05 08:05:55:589 [ADB] No connected devices have been detected
+2023-08-05 08:05:55:590 [ADB] 0 emulators connected
+2023-08-05 08:05:55:590 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:05:56:602 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:05:56:602 [ADB] Getting connected emulators
+2023-08-05 08:05:56:603 [ADB] Getting connected devices
+2023-08-05 08:05:56:628 [ADB] No connected devices have been detected
+2023-08-05 08:05:56:628 [ADB] 0 emulators connected
+2023-08-05 08:05:56:628 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:05:57:641 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:05:57:641 [ADB] Getting connected emulators
+2023-08-05 08:05:57:641 [ADB] Getting connected devices
+2023-08-05 08:05:57:660 [ADB] No connected devices have been detected
+2023-08-05 08:05:57:660 [ADB] 0 emulators connected
+2023-08-05 08:05:57:660 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:05:58:665 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:05:58:666 [ADB] Getting connected emulators
+2023-08-05 08:05:58:666 [ADB] Getting connected devices
+2023-08-05 08:05:58:687 [ADB] No connected devices have been detected
+2023-08-05 08:05:58:687 [ADB] 0 emulators connected
+2023-08-05 08:05:58:687 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:05:59:690 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:05:59:690 [ADB] Getting connected emulators
+2023-08-05 08:05:59:690 [ADB] Getting connected devices
+2023-08-05 08:05:59:714 [ADB] No connected devices have been detected
+2023-08-05 08:05:59:714 [ADB] 0 emulators connected
+2023-08-05 08:05:59:714 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:00:433 [ADB] [AVD OUTPUT] INFO    | 
+2023-08-05 08:06:00:727 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:00:728 [ADB] Getting connected emulators
+2023-08-05 08:06:00:728 [ADB] Getting connected devices
+2023-08-05 08:06:00:755 [ADB] No connected devices have been detected
+2023-08-05 08:06:00:756 [ADB] 0 emulators connected
+2023-08-05 08:06:00:756 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:01:767 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:01:767 [ADB] Getting connected emulators
+2023-08-05 08:06:01:767 [ADB] Getting connected devices
+2023-08-05 08:06:01:785 [ADB] No connected devices have been detected
+2023-08-05 08:06:01:785 [ADB] 0 emulators connected
+2023-08-05 08:06:01:785 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:02:791 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:02:791 [ADB] Getting connected emulators
+2023-08-05 08:06:02:791 [ADB] Getting connected devices
+2023-08-05 08:06:02:811 [ADB] No connected devices have been detected
+2023-08-05 08:06:02:811 [ADB] 0 emulators connected
+2023-08-05 08:06:02:811 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:03:819 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:03:819 [ADB] Getting connected emulators
+2023-08-05 08:06:03:819 [ADB] Getting connected devices
+2023-08-05 08:06:03:839 [ADB] No connected devices have been detected
+2023-08-05 08:06:03:839 [ADB] 0 emulators connected
+2023-08-05 08:06:03:839 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:04:842 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:04:842 [ADB] Getting connected emulators
+2023-08-05 08:06:04:842 [ADB] Getting connected devices
+2023-08-05 08:06:04:865 [ADB] No connected devices have been detected
+2023-08-05 08:06:04:865 [ADB] 0 emulators connected
+2023-08-05 08:06:04:865 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:05:866 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:05:866 [ADB] Getting connected emulators
+2023-08-05 08:06:05:866 [ADB] Getting connected devices
+2023-08-05 08:06:05:887 [ADB] No connected devices have been detected
+2023-08-05 08:06:05:887 [ADB] 0 emulators connected
+2023-08-05 08:06:05:887 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:06:893 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:06:893 [ADB] Getting connected emulators
+2023-08-05 08:06:06:893 [ADB] Getting connected devices
+2023-08-05 08:06:06:914 [ADB] No connected devices have been detected
+2023-08-05 08:06:06:914 [ADB] 0 emulators connected
+2023-08-05 08:06:06:914 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:07:919 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:07:920 [ADB] Getting connected emulators
+2023-08-05 08:06:07:920 [ADB] Getting connected devices
+2023-08-05 08:06:07:943 [ADB] No connected devices have been detected
+2023-08-05 08:06:07:944 [ADB] 0 emulators connected
+2023-08-05 08:06:07:944 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:08:949 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:08:949 [ADB] Getting connected emulators
+2023-08-05 08:06:08:949 [ADB] Getting connected devices
+2023-08-05 08:06:08:968 [ADB] No connected devices have been detected
+2023-08-05 08:06:08:968 [ADB] 0 emulators connected
+2023-08-05 08:06:08:969 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:09:972 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:09:973 [ADB] Getting connected emulators
+2023-08-05 08:06:09:973 [ADB] Getting connected devices
+2023-08-05 08:06:09:997 [ADB] No connected devices have been detected
+2023-08-05 08:06:09:998 [ADB] 0 emulators connected
+2023-08-05 08:06:09:998 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:11:012 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:11:013 [ADB] Getting connected emulators
+2023-08-05 08:06:11:013 [ADB] Getting connected devices
+2023-08-05 08:06:11:059 [ADB] No connected devices have been detected
+2023-08-05 08:06:11:059 [ADB] 0 emulators connected
+2023-08-05 08:06:11:059 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:12:067 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:12:067 [ADB] Getting connected emulators
+2023-08-05 08:06:12:067 [ADB] Getting connected devices
+2023-08-05 08:06:12:088 [ADB] No connected devices have been detected
+2023-08-05 08:06:12:088 [ADB] 0 emulators connected
+2023-08-05 08:06:12:088 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:13:091 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:13:091 [ADB] Getting connected emulators
+2023-08-05 08:06:13:091 [ADB] Getting connected devices
+2023-08-05 08:06:13:116 [ADB] No connected devices have been detected
+2023-08-05 08:06:13:117 [ADB] 0 emulators connected
+2023-08-05 08:06:13:117 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:14:129 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:14:129 [ADB] Getting connected emulators
+2023-08-05 08:06:14:129 [ADB] Getting connected devices
+2023-08-05 08:06:14:154 [ADB] No connected devices have been detected
+2023-08-05 08:06:14:154 [ADB] 0 emulators connected
+2023-08-05 08:06:14:155 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:15:158 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:15:158 [ADB] Getting connected emulators
+2023-08-05 08:06:15:158 [ADB] Getting connected devices
+2023-08-05 08:06:15:181 [ADB] No connected devices have been detected
+2023-08-05 08:06:15:181 [ADB] 0 emulators connected
+2023-08-05 08:06:15:181 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:16:182 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:16:183 [ADB] Getting connected emulators
+2023-08-05 08:06:16:183 [ADB] Getting connected devices
+2023-08-05 08:06:16:208 [ADB] No connected devices have been detected
+2023-08-05 08:06:16:208 [ADB] 0 emulators connected
+2023-08-05 08:06:16:208 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:17:220 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:17:221 [ADB] Getting connected emulators
+2023-08-05 08:06:17:221 [ADB] Getting connected devices
+2023-08-05 08:06:17:274 [ADB] No connected devices have been detected
+2023-08-05 08:06:17:275 [ADB] 0 emulators connected
+2023-08-05 08:06:17:275 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:18:288 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:18:289 [ADB] Getting connected emulators
+2023-08-05 08:06:18:289 [ADB] Getting connected devices
+2023-08-05 08:06:18:356 [ADB] No connected devices have been detected
+2023-08-05 08:06:18:357 [ADB] 0 emulators connected
+2023-08-05 08:06:18:357 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:19:371 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:19:371 [ADB] Getting connected emulators
+2023-08-05 08:06:19:371 [ADB] Getting connected devices
+2023-08-05 08:06:19:589 [ADB] No connected devices have been detected
+2023-08-05 08:06:19:589 [ADB] 0 emulators connected
+2023-08-05 08:06:19:589 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:20:595 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:20:596 [ADB] Getting connected emulators
+2023-08-05 08:06:20:596 [ADB] Getting connected devices
+2023-08-05 08:06:20:631 [ADB] No connected devices have been detected
+2023-08-05 08:06:20:631 [ADB] 0 emulators connected
+2023-08-05 08:06:20:632 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:21:639 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:21:639 [ADB] Getting connected emulators
+2023-08-05 08:06:21:639 [ADB] Getting connected devices
+2023-08-05 08:06:21:663 [ADB] No connected devices have been detected
+2023-08-05 08:06:21:663 [ADB] 0 emulators connected
+2023-08-05 08:06:21:663 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:22:675 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:22:676 [ADB] Getting connected emulators
+2023-08-05 08:06:22:676 [ADB] Getting connected devices
+2023-08-05 08:06:22:707 [ADB] No connected devices have been detected
+2023-08-05 08:06:22:707 [ADB] 0 emulators connected
+2023-08-05 08:06:22:707 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:23:722 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:23:723 [ADB] Getting connected emulators
+2023-08-05 08:06:23:723 [ADB] Getting connected devices
+2023-08-05 08:06:23:746 [ADB] No connected devices have been detected
+2023-08-05 08:06:23:746 [ADB] 0 emulators connected
+2023-08-05 08:06:23:746 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:24:747 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:24:747 [ADB] Getting connected emulators
+2023-08-05 08:06:24:747 [ADB] Getting connected devices
+2023-08-05 08:06:24:775 [ADB] No connected devices have been detected
+2023-08-05 08:06:24:775 [ADB] 0 emulators connected
+2023-08-05 08:06:24:775 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:25:787 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:25:788 [ADB] Getting connected emulators
+2023-08-05 08:06:25:788 [ADB] Getting connected devices
+2023-08-05 08:06:25:823 [ADB] No connected devices have been detected
+2023-08-05 08:06:25:823 [ADB] 0 emulators connected
+2023-08-05 08:06:25:823 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:26:839 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:26:840 [ADB] Getting connected emulators
+2023-08-05 08:06:26:840 [ADB] Getting connected devices
+2023-08-05 08:06:26:873 [ADB] No connected devices have been detected
+2023-08-05 08:06:26:873 [ADB] 0 emulators connected
+2023-08-05 08:06:26:874 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:27:877 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:27:878 [ADB] Getting connected emulators
+2023-08-05 08:06:27:878 [ADB] Getting connected devices
+2023-08-05 08:06:27:992 [ADB] No connected devices have been detected
+2023-08-05 08:06:27:992 [ADB] 0 emulators connected
+2023-08-05 08:06:27:992 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:28:993 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:28:993 [ADB] Getting connected emulators
+2023-08-05 08:06:28:994 [ADB] Getting connected devices
+2023-08-05 08:06:29:022 [ADB] No connected devices have been detected
+2023-08-05 08:06:29:023 [ADB] 0 emulators connected
+2023-08-05 08:06:29:023 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:30:033 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:30:033 [ADB] Getting connected emulators
+2023-08-05 08:06:30:033 [ADB] Getting connected devices
+2023-08-05 08:06:30:062 [ADB] No connected devices have been detected
+2023-08-05 08:06:30:063 [ADB] 0 emulators connected
+2023-08-05 08:06:30:063 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:31:072 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:31:072 [ADB] Getting connected emulators
+2023-08-05 08:06:31:072 [ADB] Getting connected devices
+2023-08-05 08:06:31:257 [ADB] No connected devices have been detected
+2023-08-05 08:06:31:258 [ADB] 0 emulators connected
+2023-08-05 08:06:31:258 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:32:262 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:32:262 [ADB] Getting connected emulators
+2023-08-05 08:06:32:262 [ADB] Getting connected devices
+2023-08-05 08:06:32:310 [ADB] No connected devices have been detected
+2023-08-05 08:06:32:310 [ADB] 0 emulators connected
+2023-08-05 08:06:32:312 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:33:315 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:33:315 [ADB] Getting connected emulators
+2023-08-05 08:06:33:315 [ADB] Getting connected devices
+2023-08-05 08:06:33:346 [ADB] No connected devices have been detected
+2023-08-05 08:06:33:346 [ADB] 0 emulators connected
+2023-08-05 08:06:33:346 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:34:353 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:34:354 [ADB] Getting connected emulators
+2023-08-05 08:06:34:354 [ADB] Getting connected devices
+2023-08-05 08:06:34:412 [ADB] No connected devices have been detected
+2023-08-05 08:06:34:413 [ADB] 0 emulators connected
+2023-08-05 08:06:34:414 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:35:426 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:35:427 [ADB] Getting connected emulators
+2023-08-05 08:06:35:427 [ADB] Getting connected devices
+2023-08-05 08:06:35:457 [ADB] No connected devices have been detected
+2023-08-05 08:06:35:457 [ADB] 0 emulators connected
+2023-08-05 08:06:35:458 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:36:466 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:36:466 [ADB] Getting connected emulators
+2023-08-05 08:06:36:466 [ADB] Getting connected devices
+2023-08-05 08:06:36:508 [ADB] No connected devices have been detected
+2023-08-05 08:06:36:508 [ADB] 0 emulators connected
+2023-08-05 08:06:36:508 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:37:521 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:37:521 [ADB] Getting connected emulators
+2023-08-05 08:06:37:522 [ADB] Getting connected devices
+2023-08-05 08:06:37:562 [ADB] No connected devices have been detected
+2023-08-05 08:06:37:563 [ADB] 0 emulators connected
+2023-08-05 08:06:37:563 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:38:564 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:38:565 [ADB] Getting connected emulators
+2023-08-05 08:06:38:566 [ADB] Getting connected devices
+2023-08-05 08:06:38:607 [ADB] No connected devices have been detected
+2023-08-05 08:06:38:608 [ADB] 0 emulators connected
+2023-08-05 08:06:38:608 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:39:620 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:39:620 [ADB] Getting connected emulators
+2023-08-05 08:06:39:621 [ADB] Getting connected devices
+2023-08-05 08:06:39:661 [ADB] No connected devices have been detected
+2023-08-05 08:06:39:662 [ADB] 0 emulators connected
+2023-08-05 08:06:39:662 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:40:676 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:40:676 [ADB] Getting connected emulators
+2023-08-05 08:06:40:676 [ADB] Getting connected devices
+2023-08-05 08:06:40:703 [ADB] No connected devices have been detected
+2023-08-05 08:06:40:703 [ADB] 0 emulators connected
+2023-08-05 08:06:40:703 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:41:719 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:41:719 [ADB] Getting connected emulators
+2023-08-05 08:06:41:719 [ADB] Getting connected devices
+2023-08-05 08:06:41:746 [ADB] No connected devices have been detected
+2023-08-05 08:06:41:746 [ADB] 0 emulators connected
+2023-08-05 08:06:41:746 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:42:759 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:42:760 [ADB] Getting connected emulators
+2023-08-05 08:06:42:760 [ADB] Getting connected devices
+2023-08-05 08:06:42:794 [ADB] No connected devices have been detected
+2023-08-05 08:06:42:795 [ADB] 0 emulators connected
+2023-08-05 08:06:42:795 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:43:799 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:43:799 [ADB] Getting connected emulators
+2023-08-05 08:06:43:800 [ADB] Getting connected devices
+2023-08-05 08:06:43:826 [ADB] No connected devices have been detected
+2023-08-05 08:06:43:827 [ADB] 0 emulators connected
+2023-08-05 08:06:43:827 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:44:840 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:44:840 [ADB] Getting connected emulators
+2023-08-05 08:06:44:840 [ADB] Getting connected devices
+2023-08-05 08:06:44:868 [ADB] No connected devices have been detected
+2023-08-05 08:06:44:868 [ADB] 0 emulators connected
+2023-08-05 08:06:44:868 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:45:876 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:45:876 [ADB] Getting connected emulators
+2023-08-05 08:06:45:876 [ADB] Getting connected devices
+2023-08-05 08:06:45:911 [ADB] No connected devices have been detected
+2023-08-05 08:06:45:911 [ADB] 0 emulators connected
+2023-08-05 08:06:45:912 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:46:913 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:46:913 [ADB] Getting connected emulators
+2023-08-05 08:06:46:913 [ADB] Getting connected devices
+2023-08-05 08:06:46:941 [ADB] No connected devices have been detected
+2023-08-05 08:06:46:941 [ADB] 0 emulators connected
+2023-08-05 08:06:46:942 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:47:952 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:47:953 [ADB] Getting connected emulators
+2023-08-05 08:06:47:953 [ADB] Getting connected devices
+2023-08-05 08:06:47:980 [ADB] No connected devices have been detected
+2023-08-05 08:06:47:981 [ADB] 0 emulators connected
+2023-08-05 08:06:47:981 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:48:990 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:48:991 [ADB] Getting connected emulators
+2023-08-05 08:06:48:991 [ADB] Getting connected devices
+2023-08-05 08:06:49:021 [ADB] No connected devices have been detected
+2023-08-05 08:06:49:021 [ADB] 0 emulators connected
+2023-08-05 08:06:49:022 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:50:034 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:50:034 [ADB] Getting connected emulators
+2023-08-05 08:06:50:034 [ADB] Getting connected devices
+2023-08-05 08:06:50:064 [ADB] No connected devices have been detected
+2023-08-05 08:06:50:064 [ADB] 0 emulators connected
+2023-08-05 08:06:50:064 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:50:404 [ADB] Trying to find 'Pixel_2_API_30' emulator
+2023-08-05 08:06:50:405 [ADB] Getting connected emulators
+2023-08-05 08:06:50:405 [ADB] Getting connected devices
+2023-08-05 08:06:50:436 [ADB] No connected devices have been detected
+2023-08-05 08:06:50:436 [ADB] 0 emulators connected
+2023-08-05 08:06:50:436 [ADB] Emulator 'Pixel_2_API_30' not running
+2023-08-05 08:06:50:437 [UiAutomator2] Deleting UiAutomator2 session
+2023-08-05 08:06:50:439 [BaseDriver] Event 'newSessionStarted' logged at 1691222810438 (13:36:50 GMT+0530 (India Standard Time))
+2023-08-05 08:06:50:555 [W3C] Encountered internal error running command: Error: Error getting AVD with retry. Original error: Condition unmet after 60032 ms. Timing out.
+2023-08-05 08:06:50:555 [W3C]     at ADB.getRunningAVDWithRetry (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:695:11)
+2023-08-05 08:06:50:555 [W3C]     at C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:853:39
+2023-08-05 08:06:50:555 [W3C]     at retry (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\asyncbox\lib\asyncbox.js:43:13)
+2023-08-05 08:06:50:555 [W3C]     at ADB.launchAVD (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\appium-adb\lib\tools\system-calls.js:853:3)
+2023-08-05 08:06:50:555 [W3C]     at Object.prepareEmulator (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\appium-android-driver\lib\android-helpers.js:172:3)
+2023-08-05 08:06:50:555 [W3C]     at Object.getDeviceInfoFromCaps (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\appium-android-driver\lib\android-helpers.js:220:5)
+2023-08-05 08:06:50:556 [W3C]     at AndroidUiautomator2Driver.startUiAutomator2Session (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:338:26)
+2023-08-05 08:06:50:558 [W3C]     at AndroidUiautomator2Driver.createSession (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:229:7)
+2023-08-05 08:06:50:558 [W3C]     at AppiumDriver.createSession (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\lib\appium.js:387:35)
+2023-08-05 08:06:50:574 [HTTP] <-- POST /wd/hub/session 500 62783 ms - 739
+2023-08-05 08:06:50:574 [HTTP] 
+2023-08-05 08:06:55:007 [ADB] [AVD OUTPUT] INFO    |  (2x)
+2023-08-05 08:06:55:008 [ADB] [AVD OUTPUT] INFO    | Boot completed
+2023-08-05 08:06:55:016 uncaughtException: EPIPE: broken pipe, write
+Error: EPIPE: broken pipe, write
+    at Socket._write (node:internal/net:61:25)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Socket.Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\transports\console.js:79:23)
+    at Console._write (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:428:64)
+    at writeOrBuffer (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:417:5)
+    at Console.Writable.write (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:334:11)
+    at DerivedLogger.ondata (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:681:20)
+    at DerivedLogger.emit (node:events:525:35)
+    at addChunk (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:298:12)
+    at readableAddChunk (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:280:11)
+    at DerivedLogger.Readable.push (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:241:10)
+    at DerivedLogger.Transform.push (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_transform.js:139:32)
+    at DerivedLogger._transform (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\logger.js:305:12)
+2023-08-05 08:06:55:019 uncaughtException: EPIPE: broken pipe, write
+Error: EPIPE: broken pipe, write
+    at Socket._write (node:internal/net:61:25)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Socket.Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\transports\console.js:51:25)
+    at Console._write (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:428:64)
+    at writeOrBuffer (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:417:5)
+    at Console.Writable.write (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:334:11)
+    at DerivedLogger.ondata (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:681:20)
+    at DerivedLogger.emit (node:events:525:35)
+    at addChunk (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:298:12)
+    at readableAddChunk (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:280:11)
+    at DerivedLogger.Readable.push (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:241:10)
+    at DerivedLogger.Transform.push (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_transform.js:139:32)
+    at DerivedLogger._transform (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\logger.js:305:12)
+2023-08-05 08:06:55:022 uncaughtException: EPIPE: broken pipe, write
+Error: EPIPE: broken pipe, write
+    at Socket._write (node:internal/net:61:25)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Socket.Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\transports\console.js:51:25)
+    at Console._write (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:428:64)
+    at writeOrBuffer (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:417:5)
+    at Console.Writable.write (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:334:11)
+    at DerivedLogger.ondata (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:681:20)
+    at DerivedLogger.emit (node:events:525:35)
+    at addChunk (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:298:12)
+    at readableAddChunk (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:280:11)
+    at DerivedLogger.Readable.push (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:241:10)
+    at DerivedLogger.Transform.push (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_transform.js:139:32)
+    at DerivedLogger._transform (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\logger.js:305:12)
+2023-08-05 08:06:55:024 uncaughtException: EPIPE: broken pipe, write
+Error: EPIPE: broken pipe, write
+    at Socket._write (node:internal/net:61:25)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Socket.Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\transports\console.js:51:25)
+    at Console._write (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:428:64)
+    at writeOrBuffer (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:417:5)
+    at Console.Writable.write (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:334:11)
+    at DerivedLogger.ondata (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:681:20)
+    at DerivedLogger.emit (node:events:525:35)
+    at addChunk (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:298:12)
+    at readableAddChunk (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:280:11)
+    at DerivedLogger.Readable.push (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:241:10)
+    at DerivedLogger.Transform.push (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_transform.js:139:32)
+    at DerivedLogger._transform (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\logger.js:305:12)
+2023-08-05 08:06:55:027 uncaughtException: EPIPE: broken pipe, write
+Error: EPIPE: broken pipe, write
+    at Socket._write (node:internal/net:61:25)
+    at writeOrBuffer (node:internal/streams/writable:392:12)
+    at _write (node:internal/streams/writable:333:10)
+    at Socket.Writable.write (node:internal/streams/writable:337:10)
+    at Console.log (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\transports\console.js:51:25)
+    at Console._write (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\index.js:103:17)
+    at doWrite (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:428:64)
+    at writeOrBuffer (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:417:5)
+    at Console.Writable.write (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\winston-transport\node_modules\readable-stream\lib\_stream_writable.js:334:11)
+    at DerivedLogger.ondata (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:681:20)
+    at DerivedLogger.emit (node:events:525:35)
+    at addChunk (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:298:12)
+    at readableAddChunk (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:280:11)
+    at DerivedLogger.Readable.push (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_readable.js:241:10)
+    at DerivedLogger.Transform.push (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\readable-stream\lib\_stream_transform.js:139:32)
+    at DerivedLogger._transform (C:\Users\Rudra\AppData\Roaming\npm\node_modules\appium\node_modules\winston\lib\winston\logger.js:305:12)

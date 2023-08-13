@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="12" total="16" passed="0" failed="0" skipped="4">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-05T13:35:47 IST" name="Test_Suite_Emulator_Pixel_3" finished-at="2023-08-05T13:36:50 IST" duration-ms="63475">
+    <groups>
+      <group name="REGRESSION">
+        <method signature="CompanySettingsTests.UpdateComapnyAbout()[pri:0, instance:com.appium.tests.CompanySettingsTests@36ebc363]" name="UpdateComapnyAbout" class="com.appium.tests.CompanySettingsTests"/>
+        <method signature="LoginTests.successfulLogin()[pri:0, instance:com.appium.tests.LoginTests@51399530]" name="successfulLogin" class="com.appium.tests.LoginTests"/>
+        <method signature="LogoutTests.logOutApplication()[pri:0, instance:com.appium.tests.LogoutTests@38425407]" name="logOutApplication" class="com.appium.tests.LogoutTests"/>
+        <method signature="MyCompanyTests.checkUpdateComapnyAbout()[pri:0, instance:com.appium.tests.MyCompanyTests@3c41ed1d]" name="checkUpdateComapnyAbout" class="com.appium.tests.MyCompanyTests"/>
+      </group> <!-- REGRESSION -->
+      <group name="BVT">
+        <method signature="CompanySettingsTests.UpdateComapnyAbout()[pri:0, instance:com.appium.tests.CompanySettingsTests@36ebc363]" name="UpdateComapnyAbout" class="com.appium.tests.CompanySettingsTests"/>
+        <method signature="LoginTests.successfulLogin()[pri:0, instance:com.appium.tests.LoginTests@51399530]" name="successfulLogin" class="com.appium.tests.LoginTests"/>
+        <method signature="LogoutTests.logOutApplication()[pri:0, instance:com.appium.tests.LogoutTests@38425407]" name="logOutApplication" class="com.appium.tests.LogoutTests"/>
+        <method signature="MyCompanyTests.checkUpdateComapnyAbout()[pri:0, instance:com.appium.tests.MyCompanyTests@3c41ed1d]" name="checkUpdateComapnyAbout" class="com.appium.tests.MyCompanyTests"/>
+      </group> <!-- BVT -->
+      <group name="SANITY">
+        <method signature="CompanySettingsTests.UpdateComapnyAbout()[pri:0, instance:com.appium.tests.CompanySettingsTests@36ebc363]" name="UpdateComapnyAbout" class="com.appium.tests.CompanySettingsTests"/>
+        <method signature="LoginTests.successfulLogin()[pri:0, instance:com.appium.tests.LoginTests@51399530]" name="successfulLogin" class="com.appium.tests.LoginTests"/>
+        <method signature="LogoutTests.logOutApplication()[pri:0, instance:com.appium.tests.LogoutTests@38425407]" name="logOutApplication" class="com.appium.tests.LogoutTests"/>
+        <method signature="MyCompanyTests.checkUpdateComapnyAbout()[pri:0, instance:com.appium.tests.MyCompanyTests@3c41ed1d]" name="checkUpdateComapnyAbout" class="com.appium.tests.MyCompanyTests"/>
+      </group> <!-- SANITY -->
+    </groups>
+    <test started-at="2023-08-05T13:35:47 IST" name="Tests_on_Emulator_Pixel_2" finished-at="2023-08-05T13:36:50 IST" duration-ms="63475">
+      <class name="com.appium.tests.MyCompanyTests">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.appium.tests.MyCompanyTests@3c41ed1d]" started-at="2023-08-05T13:36:50 IST" name="beforeMethod" finished-at="2023-08-05T13:36:50 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.appium.java_client.screenrecording.CanRecordScreen.startRecordingScreen()" because the return value of "com.appium.manager.DriverManager.getMobileDriver()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.appium.java_client.screenrecording.CanRecordScreen.startRecordingScreen()" because the return value of "com.appium.manager.DriverManager.getMobileDriver()" is null
+at com.driver.utils.VideoRecordUtils.startRecording(VideoRecordUtils.java:30)
+at com.appium.base.BaseTestMobile.beforeMethod(BaseTestMobile.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.appium.tests.MyCompanyTests@3c41ed1d]" started-at="2023-08-05T13:36:50 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1691222810748" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="checkUpdateComapnyAbout()[pri:0, instance:com.appium.tests.MyCompanyTests@3c41ed1d]" started-at="2023-08-05T13:36:50 IST" name="checkUpdateComapnyAbout" finished-at="2023-08-05T13:36:50 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.appium.java_client.screenrecording.CanRecordScreen.startRecordingScreen()" because the return value of "com.appium.manager.DriverManager.getMobileDriver()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.appium.java_client.screenrecording.CanRecordScreen.startRecordingScreen()" because the return value of "com.appium.manager.DriverManager.getMobileDriver()" is null
+at com.driver.utils.VideoRecordUtils.startRecording(VideoRecordUtils.java:30)
+at com.appium.base.BaseTestMobile.beforeMethod(BaseTestMobile.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkUpdateComapnyAbout -->
+        <test-method is-config="true" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:com.appium.tests.MyCompanyTests@3c41ed1d]" started-at="2023-08-05T13:36:50 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1691222810755" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.appium.tests.MyCompanyTests@3c41ed1d]" started-at="2023-08-05T13:36:50 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1691222810756" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.appium.tests.MyCompanyTests@3c41ed1d]" started-at="2023-08-05T13:36:50 IST" name="afterClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1691222810757" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.appium.tests.MyCompanyTests -->
+      <class name="com.appium.tests.LoginTests">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.appium.tests.LoginTests@51399530]" started-at="2023-08-05T13:35:45 IST" name="beforeSuite" finished-at="2023-08-05T13:35:47 IST" duration-ms="2156" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.appium.tests.LoginTests@51399530]" started-at="2023-08-05T13:35:47 IST" name="beforeTest" finished-at="2023-08-05T13:36:50 IST" duration-ms="63306" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Android]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[emulator-5554]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Pixel_2_API_30]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[10011]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[11012]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[iOSOnly]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[iOSOnly]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.appium.tests.LoginTests@51399530]" started-at="2023-08-05T13:36:50 IST" name="beforeMethod" finished-at="2023-08-05T13:36:50 IST" duration-ms="4" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.appium.java_client.screenrecording.CanRecordScreen.startRecordingScreen()" because the return value of "com.appium.manager.DriverManager.getMobileDriver()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.appium.java_client.screenrecording.CanRecordScreen.startRecordingScreen()" because the return value of "com.appium.manager.DriverManager.getMobileDriver()" is null
+at com.driver.utils.VideoRecordUtils.startRecording(VideoRecordUtils.java:30)
+at com.appium.base.BaseTestMobile.beforeMethod(BaseTestMobile.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.appium.tests.LoginTests@51399530]" started-at="2023-08-05T13:36:50 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1691222810675" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="successfulLogin()[pri:0, instance:com.appium.tests.LoginTests@51399530]" started-at="2023-08-05T13:36:50 IST" name="successfulLogin" finished-at="2023-08-05T13:36:50 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.appium.java_client.screenrecording.CanRecordScreen.startRecordingScreen()" because the return value of "com.appium.manager.DriverManager.getMobileDriver()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.appium.java_client.screenrecording.CanRecordScreen.startRecordingScreen()" because the return value of "com.appium.manager.DriverManager.getMobileDriver()" is null
+at com.driver.utils.VideoRecordUtils.startRecording(VideoRecordUtils.java:30)
+at com.appium.base.BaseTestMobile.beforeMethod(BaseTestMobile.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- successfulLogin -->
+        <test-method is-config="true" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:com.appium.tests.LoginTests@51399530]" started-at="2023-08-05T13:36:50 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1691222810718" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.appium.tests.LoginTests@51399530]" started-at="2023-08-05T13:36:50 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1691222810720" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.appium.tests.LoginTests@51399530]" started-at="2023-08-05T13:36:50 IST" name="afterClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1691222810723" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.appium.tests.LoginTests@51399530]" started-at="2023-08-05T13:36:50 IST" name="afterTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1691222810781" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:com.appium.tests.LoginTests@51399530]" started-at="2023-08-05T13:36:50 IST" name="afterSuite" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1691222810845" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- com.appium.tests.LoginTests -->
+      <class name="com.appium.tests.LogoutTests">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.appium.tests.LogoutTests@38425407]" started-at="2023-08-05T13:36:50 IST" name="beforeMethod" finished-at="2023-08-05T13:36:50 IST" duration-ms="0" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.appium.java_client.screenrecording.CanRecordScreen.startRecordingScreen()" because the return value of "com.appium.manager.DriverManager.getMobileDriver()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.appium.java_client.screenrecording.CanRecordScreen.startRecordingScreen()" because the return value of "com.appium.manager.DriverManager.getMobileDriver()" is null
+at com.driver.utils.VideoRecordUtils.startRecording(VideoRecordUtils.java:30)
+at com.appium.base.BaseTestMobile.beforeMethod(BaseTestMobile.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.appium.tests.LogoutTests@38425407]" started-at="2023-08-05T13:36:50 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1691222810770" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="logOutApplication()[pri:0, instance:com.appium.tests.LogoutTests@38425407]" started-at="2023-08-05T13:36:50 IST" name="logOutApplication" finished-at="2023-08-05T13:36:50 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.appium.java_client.screenrecording.CanRecordScreen.startRecordingScreen()" because the return value of "com.appium.manager.DriverManager.getMobileDriver()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.appium.java_client.screenrecording.CanRecordScreen.startRecordingScreen()" because the return value of "com.appium.manager.DriverManager.getMobileDriver()" is null
+at com.driver.utils.VideoRecordUtils.startRecording(VideoRecordUtils.java:30)
+at com.appium.base.BaseTestMobile.beforeMethod(BaseTestMobile.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutApplication -->
+        <test-method is-config="true" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:com.appium.tests.LogoutTests@38425407]" started-at="2023-08-05T13:36:50 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1691222810777" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.appium.tests.LogoutTests@38425407]" started-at="2023-08-05T13:36:50 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1691222810778" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.appium.tests.LogoutTests@38425407]" started-at="2023-08-05T13:36:50 IST" name="afterClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1691222810779" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.appium.tests.LogoutTests -->
+      <class name="com.appium.tests.CompanySettingsTests">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.appium.tests.CompanySettingsTests@36ebc363]" started-at="2023-08-05T13:36:50 IST" name="beforeMethod" finished-at="2023-08-05T13:36:50 IST" duration-ms="0" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.appium.java_client.screenrecording.CanRecordScreen.startRecordingScreen()" because the return value of "com.appium.manager.DriverManager.getMobileDriver()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.appium.java_client.screenrecording.CanRecordScreen.startRecordingScreen()" because the return value of "com.appium.manager.DriverManager.getMobileDriver()" is null
+at com.driver.utils.VideoRecordUtils.startRecording(VideoRecordUtils.java:30)
+at com.appium.base.BaseTestMobile.beforeMethod(BaseTestMobile.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.appium.tests.CompanySettingsTests@36ebc363]" started-at="2023-08-05T13:36:50 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1691222810730" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="UpdateComapnyAbout()[pri:0, instance:com.appium.tests.CompanySettingsTests@36ebc363]" started-at="2023-08-05T13:36:50 IST" name="UpdateComapnyAbout" finished-at="2023-08-05T13:36:50 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "io.appium.java_client.screenrecording.CanRecordScreen.startRecordingScreen()" because the return value of "com.appium.manager.DriverManager.getMobileDriver()" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "io.appium.java_client.screenrecording.CanRecordScreen.startRecordingScreen()" because the return value of "com.appium.manager.DriverManager.getMobileDriver()" is null
+at com.driver.utils.VideoRecordUtils.startRecording(VideoRecordUtils.java:30)
+at com.appium.base.BaseTestMobile.beforeMethod(BaseTestMobile.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpdateComapnyAbout -->
+        <test-method is-config="true" signature="afterMethod(java.lang.reflect.Method)[pri:0, instance:com.appium.tests.CompanySettingsTests@36ebc363]" started-at="2023-08-05T13:36:50 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1691222810738" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.appium.tests.CompanySettingsTests@36ebc363]" started-at="2023-08-05T13:36:50 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1691222810740" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.appium.tests.CompanySettingsTests@36ebc363]" started-at="2023-08-05T13:36:50 IST" name="afterClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1691222810741" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.appium.tests.CompanySettingsTests -->
+    </test> <!-- Tests_on_Emulator_Pixel_2 -->
+  </suite> <!-- Test_Suite_Emulator_Pixel_3 -->
+</testng-results>
